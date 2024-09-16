@@ -7,19 +7,19 @@
 </head>
 <body>
     <h2>
-        Attributes:
+        Save Masteries:
     </h2>
     <p>
         
     </p>
-    <div id="attributes">
+    <div id="save">
         Points Left to Spend:
         <div id="attributePointsLeft">
 
         </div>
-        <label>might</label>
+        <label>might save</label>
         <br>
-        <input type="number" id="might" min="-2" max="3" onclick="updateAttributePoints()"></input>
+        <input type="radio" id="mightSave" onclick="updateAttributePoints()"></input>
         <br>
         <label>agility</label>
         <br>
