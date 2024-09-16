@@ -3,8 +3,8 @@ async function initialize() {
     await getCharacter();
 
     // Now that characterInfo is available, you can safely use it
-    if (characterInfo['might_save'] == false) {
-        document.getElementById('mightSave').value = on
+    if (characterInfo['might'] != -10) {
+        document.getElementById('might').value = characterInfo['might']
     } else {
         document.getElementById('might').value = -2
     }
@@ -32,7 +32,7 @@ function attributePoints() {
     return points
 }
 
-function updateSaveMasteries() {
+function updateAttributePoints() {
     document.getElementById('attributePointsLeft').innerHTML = attributePoints()
 }
 

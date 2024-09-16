@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DC20 Edit Save Masteries</title>
+    <title>DC20 Edit Skills</title>
 </head>
 <body>
     <h2>
-        Save Masteries:
+        Skills:
     </h2>
     <p>
         
     </p>
-    <div id="save">
+    <div id="skills">
         Points Left to Spend:
-        <div id="savePointsLeft">
+        <div id="skillPoints">
 
         </div>
-        <label>might save</label>
+        <h2>
+            1 point skills
+        </h2>
+        <label>Awareness</label>
         <br>
-        <input type="checkbox" id="mightSave" onclick="updateSaveMasteries()"></input>
+        <input type="checkbox" id="awareness" onclick="updateSkills()"></input>
         <br>
         <label>agility save</label>
         <br>
@@ -38,6 +41,6 @@
 </body>
 
 <script src="../sql/getCharacter.js" defer></script>
-<script src="saveMasteries.js" defer></script>
+<script src="skills.js" defer></script>
 <script src="../sql/updateCharacter.js" defer></script>
 </html>
