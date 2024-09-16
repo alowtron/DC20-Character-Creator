@@ -37,7 +37,7 @@ function updateSaveMasteries() {
 initialize()
 
 
-async function Next() {
+async function next() {
     characterInfo['might_save'] = document.getElementById('mightSave').checked
     characterInfo['agility_save'] = document.getElementById('agilitySave').checked
     characterInfo['charisma_save'] = document.getElementById('charismaSave').checked
