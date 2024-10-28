@@ -113,7 +113,7 @@ async function next() {
     characterInfo['occultism'] = document.getElementById('occultism').value
     characterInfo['religion'] = document.getElementById('religion').value
     await updateCharacter()
-    window.location.href = `skills.php?character_id=${character['character_id']}`
+    window.location.href = `trades.php?character_id=${character['character_id']}`
 }
 
 async function save() {
