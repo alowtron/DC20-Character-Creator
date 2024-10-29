@@ -71,13 +71,21 @@ $json = array(
     "ancestry1" => "",
     "ancestry2" => "",
     "ancestry_trait1" => "",
+    "ancestry_trait1_info" => "",
     "ancestry_trait2" => "",
+    "ancestry_trait2_info" => "",
     "ancestry_trait3" => "",
+    "ancestry_trait3_info" => "",
     "ancestry_trait4" => "",
+    "ancestry_trait4_info" => "",
     "ancestry_trait5" => "",
+    "ancestry_trait5_info" => "",
     "ancestry_trait6" => "",
+    "ancestry_trait6_info" => "",
     "ancestry_trait7" => "",
+    "ancestry_trait7_info" => "",
     "ancestry_trait8" => "",
+    "ancestry_trait8_info" => "",
 );
 $json_json = json_encode($json);
 

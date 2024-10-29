@@ -13,11 +13,13 @@
         
     </p>
     <div id="ancestries">
-        Points Left to Spend:
+        <!-- Points Left to Spend: -->
         <div id="ancestriesPoints">
 
         </div>
-        <label>ancestry 1</label>
+        
+        <label>ancestry</label>
+        <!-- ancestry 1 -->
         <br>
         <select id="ancestry1">
             <option value="human">Human</option>
@@ -33,6 +35,13 @@
             <option value="beastborn">Beastborn</option>
         </select>
         <br>
+        <div id="displayTraits">
+            <b>
+            <div id="ancestryTrait1"></div>
+            </b>
+            <div id="ancestryTrait1Info"></div>
+
+        </div>
     
     </div>
     <button onclick="next()">Next</button>

@@ -44,7 +44,7 @@ async function next() {
     characterInfo['language3_level'] = document.getElementById('language3Level').value
 
     await updateCharacter()
-    window.location.href = `languages.php?character_id=${character['character_id']}`
+    window.location.href = `ancestry.php?character_id=${character['character_id']}`
 }
 
 async function save() {
