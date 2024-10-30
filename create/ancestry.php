@@ -37,9 +37,42 @@
         <br>
         <div id="displayTraits">
             <b>
+            <div id="ancestryTrait0"></div>
+            </b>
+            <div id="ancestryTrait0Info"></div>
+            <b>
             <div id="ancestryTrait1"></div>
             </b>
             <div id="ancestryTrait1Info"></div>
+            <b>
+            <div id="ancestryTrait2"></div>
+            </b>
+            <div id="ancestryTrait2Info"></div>
+            <b>
+            <div id="ancestryTrait3"></div>
+            </b>
+            <div id="ancestryTrait3Info"></div>
+            <b>
+            <div id="ancestryTrait4"></div>
+            </b>
+            <div id="ancestryTrait4Info"></div>
+            <b>
+            <div id="ancestryTrait5"></div>
+            </b>
+            <div id="ancestryTrait5Info"></div>
+            <b>
+            <div id="ancestryTrait6"></div>
+            </b>
+            <div id="ancestryTrait6Info"></div>
+            <b>
+            <div id="ancestryTrait7"></div>
+            </b>
+            <div id="ancestryTrait7Info"></div>
+            <b>
+            <div id="ancestryTrait8"></div>
+            </b>
+            <div id="ancestryTrait8Info"></div>
+
 
         </div>
     
