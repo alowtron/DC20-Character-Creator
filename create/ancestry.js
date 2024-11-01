@@ -122,13 +122,62 @@ document.getElementById('ancestry1').addEventListener('change', function() {
         document.getElementById('ancestryTrait5').innerHTML = "Orchish Resolve"
         document.getElementById('ancestryTrait5Info').innerHTML = "You can now spend up to 2 AP while on Death's Door instead of 1."
     } else if (ancestry1 == "dragonborn") {
-        
+        document.getElementById('ancestryTrait0').innerHTML = "Reptilian Superiority"
+        document.getElementById('ancestryTrait0Info').innerHTML = "You have ADV on Intimidation Checks against reptilian creatures or Medium or smaller (not including other Dragonborn)"
+        document.getElementById('ancestryTrait1').innerHTML = "Darkvision"
+        document.getElementById('ancestryTrait1Info').innerHTML = "You have Darkvision 10 spaces"
+        document.getElementById('ancestryTrait2').innerHTML = "Draconic Resistance"
+        document.getElementById('ancestryTrait2Info').innerHTML = "You gain Resistance (Half) to your Draconic damage type."
+        document.getElementById('ancestryTrait3').innerHTML = "Draconic Breath Weapon"
+        document.getElementById('ancestryTrait3Info').innerHTML = "You gain a Breath Weapon based on your Draconic Origin. You can Spend 2 AP to exhale in a 3 Space Cone or a 6 Space Line. Alternatively, you can choose to make an Attack against a single target within 6 Spaces, increasing the damage by 1. You can use this ability once between Long Rests. When you Roll for Initiative, or meet some other unique criteria at the GM's discretion, this ability recharges.<br> • Elemental Breath Weapon: Make a Spell Check against every target's PD within the area. Hit: The target takes 2 Draconic damage. Before you make your Spell Check, you can spend 1 SP to increase the damage by 1, or 1 MP to increase it by 2.\ <br> • Mystic Breath Weapon: Make a Spell Check against every target’s MD within the area. Hit: The target takes 1 Draconic damage. Before you make your Spell Check, you can spend 1 SP to increase the damage by 1, or 1 MP to increase it by 2."
+    } else if (ancestry1 == "giantborn") {
+        document.getElementById('ancestryTrait0').innerHTML = "Unyielding Movement"
+        document.getElementById('ancestryTrait0Info').innerHTML = "You are immune to being Slowed 2 (or higher.)"
+        document.getElementById('ancestryTrait1').innerHTML = "Tough"
+        document.getElementById('ancestryTrait1Info').innerHTML = "Your HP maximum increases by 1"
+        document.getElementById('ancestryTrait2').innerHTML = "Powerful Build"
+        document.getElementById('ancestryTrait2Info').innerHTML = "You increase by 1 size, but you occupy the SPace of a creature 1 size smaller."
+        document.getElementById('ancestryTrait3').innerHTML = "Unstoppable"
+        document.getElementById('ancestryTrait3Info').innerHTML = "You have ADV on Saves against being Slowed or Stunned."
+        document.getElementById('ancestryTrait4').innerHTML = "Giant's Resolve"
+        document.getElementById('ancestryTrait4Info').innerHTML = "While on Death's Door, you reduce all damage taken by 1."
+    } else if (ancestry1 == "angelborn") {
+        document.getElementById('ancestryTrait0').innerHTML = "Divine Glow"
+        document.getElementById('ancestryTrait0Info').innerHTML = "Your body can emit Bright Light in a 5 space radius around you at will."
+        document.getElementById('ancestryTrait1').innerHTML = "Radiant Resistance"
+        document.getElementById('ancestryTrait1Info').innerHTML = "You have Resistance (Half) to Radiant damage."
+        document.getElementById('ancestryTrait2').innerHTML = "Celestial Magic"
+        document.getElementById('ancestryTrait2Info').innerHTML = "You learn 1 Spell of your choice from the Divine Spell List (Holy & Restoration during the Beta). Once per Long Rest, you can cast the chosen Spell spending 1 less MP than normal (minimum of 0 mp). The Spell's total MP cost (before all reductions) still can't exceed your Mana Spend Limit."
+        document.getElementById('ancestryTrait3').innerHTML = "Healing Touch"
+        document.getElementById('ancestryTrait3Info').innerHTML = "Once per Combat, you can spend 1 AP to touch a creature and Heal it. Make a DC 10 Spell Check. <br> Success: you can restore up to 2 HP. Success(each 5): +1 HP. <br> Failure: You only restore 1 HP."
+    } else if (ancestry1 == "fiendborn") {
+        document.getElementById('ancestryTrait0').innerHTML = "Light's Bane"
+        document.getElementById('ancestryTrait0Info').innerHTML = "You can spend 1 AP to snuff out a mundane light source within 5 spaces of you."
+        document.getElementById('ancestryTrait1').innerHTML = "Fiendish Resistance"
+        document.getElementById('ancestryTrait1Info').innerHTML = "You gain Resistance (Half) to your Fiendish damage type."
+        document.getElementById('ancestryTrait2').innerHTML = "Fiendish Magic"
+        document.getElementById('ancestryTrait2Info').innerHTML = "You learn 1 Spell of your choice from the Arcane Spell List from the Destruction or Enchantment Spell Schools. If the Spell deals damage, then it must be the same damage type as your Fiendish damage. Once per Long Rest, you can cast the chosen Spell spending 1 less MP than normal (minimum of 0 MP). The Spell’s total MP cost (before all reductions) still can’t exceed your Mana Spend Limit."
+        document.getElementById('ancestryTrait3').innerHTML = "Darkvision"
+        document.getElementById('ancestryTrait3Info').innerHTML = "You have Darkvision 10 Spaces."
+    } else if (ancestry1 == "beastborn") {
+        document.getElementById('ancestryTrait0').innerHTML = "Beastkind"
+        document.getElementById('ancestryTrait0Info').innerHTML = "You can understand and speak to (in a limited capacity) the species of Beast your Beastborn is modeled after. You can understand the meaning of their noises and behaviors, and they understand the meanings of simple words, concepts, or states of emotion."
+        document.getElementById('ancestryTrait1').innerHTML = "Climb Speed"
+        document.getElementById('ancestryTrait1Info').innerHTML = "You gain a Climb Speed equal to your Ground Speed."
+        document.getElementById('ancestryTrait2').innerHTML = "Jumper"
+        document.getElementById('ancestryTrait2Info').innerHTML = "Your Jump Distance increases by 2, and you can take the Jump action as a Minor Action."
+        document.getElementById('ancestryTrait3').innerHTML = "Darkvision"
+        document.getElementById('ancestryTrait3Info').innerHTML = "You have Darkvision 10 Spaces."
+        document.getElementById('ancestryTrait4').innerHTML = "Tough"
+        document.getElementById('ancestryTrait4Info').innerHTML = "Your HP maximum increase by 1"
+        document.getElementById('ancestryTrait5').innerHTML = "Secondary Arms"
+        document.getElementById('ancestryTrait5Info').innerHTML = "You have 2 slightly smaller secondary arms below your primary pair of arms. They function just like your primary arms, but they can’t wield Weapons with the Heavy Property or Shields."
     }
 })
 
 async function next() {
-    characterInfo['ancestry2'] = document.getElementById('ancestry2').value
-    characterInfo['ancestry2_level'] = document.getElementById('ancestry2Level').value
+    characterInfo['ancestry1'] = document.getElementById('ancestry1').value
+    //characterInfo['ancestry2'] = document.getElementById('ancestry2').value
     characterInfo['ancestry3'] = document.getElementById('ancestry3').value
     characterInfo['ancestry3_level'] = document.getElementById('ancestry3Level').value
 
