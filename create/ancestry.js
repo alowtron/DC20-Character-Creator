@@ -4,11 +4,29 @@ async function initialize() {
 
     // Now that characterInfo is available, you can safely use it
     document.getElementById('ancestry1').value = characterInfo['ancestry1']
+    characterInfo['ancestry1'] = document.getElementById('ancestry1').value
+    //characterInfo['ancestry2'] = document.getElementById('ancestry2').value
 
+    document.getElementById('ancestryTrait0').innerHTML = characterInfo['ancestry_trait0']  
+    document.getElementById('ancestryTrait0Info').innerHTML = characterInfo['ancestry_trait0_info']
+    document.getElementById('ancestryTrait1').innerHTML = characterInfo['ancestry_trait1']
+    document.getElementById('ancestryTrait1Info').innerHTML = characterInfo['ancestry_trait1_info']
+    document.getElementById('ancestryTrait2').innerHTML = characterInfo['ancestry_trait2']
+    document.getElementById('ancestryTrait2Info').innerHTML = characterInfo['ancestry_trait2_info']
+    document.getElementById('ancestryTrait3').innerHTML = characterInfo['ancestry_trait3']
+    document.getElementById('ancestryTrait3Info').innerHTML = characterInfo['ancestry_trait3_info']
+    document.getElementById('ancestryTrait4').innerHTML = characterInfo['ancestry_trait4']
+    document.getElementById('ancestryTrait4Info').innerHTML = characterInfo['ancestry_trait4_info']
+    document.getElementById('ancestryTrait5').innerHTML = characterInfo['ancestry_trait5']
+    document.getElementById('ancestryTrait5Info').innerHTML = characterInfo['ancestry_trait5_info']
+    document.getElementById('ancestryTrait6').innerHTML = characterInfo['ancestry_trait6']
+    document.getElementById('ancestryTrait6Info').innerHTML = characterInfo['ancestry_trait6_info']
+    document.getElementById('ancestryTrait7').innerHTML = characterInfo['ancestry_trait7']
+    document.getElementById('ancestryTrait7Info').innerHTML = characterInfo['ancestry_trait7_info']
+    document.getElementById('ancestryTrait8').innerHTML = characterInfo['ancestry_trait8']
+    document.getElementById('ancestryTrait8Info').innerHTML = characterInfo['ancestry_trait8_info']
 
-    
-
-    updateAncestries()
+    //updateAncestries()
     
 }
 
@@ -176,20 +194,55 @@ document.getElementById('ancestry1').addEventListener('change', function() {
 })
 
 async function next() {
+    
     characterInfo['ancestry1'] = document.getElementById('ancestry1').value
     //characterInfo['ancestry2'] = document.getElementById('ancestry2').value
-    characterInfo['ancestry3'] = document.getElementById('ancestry3').value
-    characterInfo['ancestry3_level'] = document.getElementById('ancestry3Level').value
+
+    characterInfo['ancestry_trait0'] = document.getElementById('ancestryTrait0').innerHTML
+    characterInfo['ancestry_trait0_info'] = document.getElementById('ancestryTrait0Info').innerHTML
+    characterInfo['ancestry_trait1'] = document.getElementById('ancestryTrait1').innerHTML
+    characterInfo['ancestry_trait1_info'] = document.getElementById('ancestryTrait1Info').innerHTML
+    characterInfo['ancestry_trait2'] = document.getElementById('ancestryTrait2').innerHTML
+    characterInfo['ancestry_trait2_info'] = document.getElementById('ancestryTrait2Info').innerHTML
+    characterInfo['ancestry_trait3'] = document.getElementById('ancestryTrait3').innerHTML
+    characterInfo['ancestry_trait3_info'] = document.getElementById('ancestryTrait3Info').innerHTML
+    characterInfo['ancestry_trait4'] = document.getElementById('ancestryTrait4').innerHTML
+    characterInfo['ancestry_trait4_info'] = document.getElementById('ancestryTrait4Info').innerHTML
+    characterInfo['ancestry_trait5'] = document.getElementById('ancestryTrait5').innerHTML
+    characterInfo['ancestry_trait5_info'] = document.getElementById('ancestryTrait5Info').innerHTML
+    characterInfo['ancestry_trait6'] = document.getElementById('ancestryTrait6').innerHTML
+    characterInfo['ancestry_trait6_info'] = document.getElementById('ancestryTrait6Info').innerHTML
+    characterInfo['ancestry_trait7'] = document.getElementById('ancestryTrait7').innerHTML
+    characterInfo['ancestry_trait7_info'] = document.getElementById('ancestryTrait7Info').innerHTML
+    characterInfo['ancestry_trait8'] = document.getElementById('ancestryTrait8').innerHTML
+    characterInfo['ancestry_trait8_info'] = document.getElementById('ancestryTrait8Info').innerHTML
 
     await updateCharacter()
     window.location.href = `language.php?character_id=${character['character_id']}`
 }
 
 async function save() {
-    characterInfo['ancestry2'] = document.getElementById('ancestry2').value
-    characterInfo['ancestry2_level'] = document.getElementById('ancestry2Level').value
-    characterInfo['ancestry3'] = document.getElementById('ancestry3').value
-    characterInfo['ancestry3_level'] = document.getElementById('ancestry3Level').value
+    characterInfo['ancestry1'] = document.getElementById('ancestry1').value
+    //characterInfo['ancestry2'] = document.getElementById('ancestry2').value
+
+    characterInfo['ancestry_trait0'] = document.getElementById('ancestryTrait0').innerHTML
+    characterInfo['ancestry_trait0_info'] = document.getElementById('ancestryTrait0Info').innerHTML
+    characterInfo['ancestry_trait1'] = document.getElementById('ancestryTrait1').innerHTML
+    characterInfo['ancestry_trait1_info'] = document.getElementById('ancestryTrait1Info').innerHTML
+    characterInfo['ancestry_trait2'] = document.getElementById('ancestryTrait2').innerHTML
+    characterInfo['ancestry_trait2_info'] = document.getElementById('ancestryTrait2Info').innerHTML
+    characterInfo['ancestry_trait3'] = document.getElementById('ancestryTrait3').innerHTML
+    characterInfo['ancestry_trait3_info'] = document.getElementById('ancestryTrait3Info').innerHTML
+    characterInfo['ancestry_trait4'] = document.getElementById('ancestryTrait4').innerHTML
+    characterInfo['ancestry_trait4_info'] = document.getElementById('ancestryTrait4Info').innerHTML
+    characterInfo['ancestry_trait5'] = document.getElementById('ancestryTrait5').innerHTML
+    characterInfo['ancestry_trait5_info'] = document.getElementById('ancestryTrait5Info').innerHTML
+    characterInfo['ancestry_trait6'] = document.getElementById('ancestryTrait6').innerHTML
+    characterInfo['ancestry_trait6_info'] = document.getElementById('ancestryTrait6Info').innerHTML
+    characterInfo['ancestry_trait7'] = document.getElementById('ancestryTrait7').innerHTML
+    characterInfo['ancestry_trait7_info'] = document.getElementById('ancestryTrait7Info').innerHTML
+    characterInfo['ancestry_trait8'] = document.getElementById('ancestryTrait8').innerHTML
+    characterInfo['ancestry_trait8_info'] = document.getElementById('ancestryTrait8Info').innerHTML
 
     await updateCharacter()
 }
